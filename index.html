@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Gambia & Senegal Tours</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Georgia, 'Times New Roman', serif; color: #2b2b2b; background: #faf7f0; }
+
+  header {
+    background: #1e3d2f;
+    color: #fff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .logo { font-size: 24px; font-weight: bold; letter-spacing: 1px; }
+  nav a { color: #fff; text-decoration: none; margin-left: 25px; font-size: 15px; }
+  nav a:hover { text-decoration: underline; }
+
+  .hero {
+    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+                url('https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1600') center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 120px 20px;
+  }
+  .hero h1 { font-size: 42px; margin-bottom: 15px; }
+  .hero p { font-size: 18px; margin-bottom: 30px; }
+  .btn {
+    background: #08630c;
+    color: #fff;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .btn:hover { background: #c07a30; }
+
+  section { padding: 60px 40px; max-width: 900px; margin: 0 auto; }
+  section h2 { font-size: 28px; margin-bottom: 20px; color: #1e3d2f; }
+  section p { font-size: 16px; line-height: 1.6; }
+
+  .tours { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin-top: 30px; }
+  .tour-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+  .tour-card h3 { color: #1e3d2f; margin-bottom: 10px; }
+  .tour-card p { font-size: 14px; color: #555; }
+
+  footer {
+    background: #1e3d2f;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    font-size: 14px;
+  }
+  footer a { color: #d98c3f; }
+</style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Gambia & Senegal Tours</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#tours">Tours</a>
+      <a href="#book">Book Now</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Adventure Awaits in Gambia & Senegal</h1>
+    <p>Custom, private tours across two countries — wildlife, culture, and coastline.</p>
+    <a href="#book" class="btn">Reserve Your Spot</a>
+  </div>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      Gambia & Senegal Tours offers fully customized, private trips across
+      both countries — from river wildlife and historic sites to Dakar,
+      Gorée Island, and the Pink Lake. Every tour is tailored to your pace
+      and interests, guided personally from start to finish.
+    </p>
+  </section>
+
+  <section id="tours">
+    <h2>Our Tours</h2>
+    <div class="tours">
+      <div class="tour-card">
+        <h3>Gambia & Senegal Discovery Tour</h3>
+        <p>Dakar, Gorée Island, and the Pink Lake — a multi-day journey across both countries.</p>
+      </div>
+      <div class="tour-card">
+        <h3>Fathala Wildlife Reserve Safari</h3>
+        <p>A guided safari through Fathala Reserve — giraffes, rhinos, and free-roaming wildlife.</p>
+      </div>
+      <div class="tour-card">
+        <h3>Roots / History Tour</h3>
+        <p>Kunta Kinteh Island and surrounding sites central to Gambia's history.</p>
+      </div>
+      <div class="tour-card">
+        <h3>Makasutu Culture & Nature Tour</h3>
+        <p>Forest, mangroves, and local culture on a relaxed guided walk.</p>
+      </div>
+      <div class="tour-card">
+        <h3>Georgetown (Janjanbureh) River Tour</h3>
+        <p>Travel up the River Gambia to explore river life and historic sites.</p>
+      </div>
+      <div class="tour-card">
+        <h3>5-in-1 Safari Experience</h3>
+        <p>Five highlights in one full day — wildlife, river views, and culture.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="book">
+    <h2>Book Your Tour</h2>
+    <p>Select a date below and we'll confirm all details with you directly via WhatsApp.</p>
+    <div class="tidycal-embed" data-path="modoujohm5/tendaba-river-and-wildlife-experience"></div><script src="https://asset-tidycal.b-cdn.net/js/embed.js" async></script>
+  </section>
+
+  <footer>
+    <p>Gambia & Senegal Tours &middot; The Gambia</p>
+    <p>WhatsApp: <a href="https://wa.me/2203261234">+220 326 1234</a></p>
+  </footer>
+
+</body>
+</html>
