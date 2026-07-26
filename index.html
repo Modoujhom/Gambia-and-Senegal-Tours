@@ -2,67 +2,86 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Gambia & Senegal Tours</title>
+<title>Gambia & Senegal Tours</title><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: Georgia, 'Times New Roman', serif; color: #2b2b2b; background: #faf7f0; }
+  body { font-family: 'Inter', sans-serif; color: #333; background: #fbfaf7; line-height: 1.6; }
+  h1, h2, h3, .logo { font-family: 'Playfair Display', serif; }
 
   header {
-    background: #1e3d2f;
+    background: #16302a;
     color: #fff;
-    padding: 20px 40px;
+    padding: 22px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 100;
   }
-  header .logo { font-size: 24px; font-weight: bold; letter-spacing: 1px; }
-  nav a { color: #fff; text-decoration: none; margin-left: 25px; font-size: 15px; }
-  nav a:hover { text-decoration: underline; }
+  header .logo { font-size: 26px; font-weight: 700; letter-spacing: 0.5px; }
+  nav a { color: #f2ece0; text-decoration: none; margin-left: 30px; font-size: 15px; font-weight: 500; transition: color 0.2s; }
+  nav a:hover { color: #e0a860; }
 
   .hero {
-    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    background: linear-gradient(rgba(10,25,20,0.55), rgba(10,25,20,0.55)),
                 url('https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1600') center/cover;
     color: #fff;
     text-align: center;
-    padding: 120px 20px;
+    padding: 160px 20px;
   }
-  .hero h1 { font-size: 42px; margin-bottom: 15px; }
-  .hero p { font-size: 18px; margin-bottom: 30px; }
+  .hero h1 { font-size: 48px; margin-bottom: 18px; line-height: 1.2; }
+  .hero p { font-size: 19px; margin-bottom: 35px; color: #f0ede6; max-width: 600px; margin-left: auto; margin-right: auto; }
+
   .btn {
-    background: #08630c;
-    color: #fff;
-    padding: 14px 32px;
+    background: #e0a860;
+    color: #16302a;
+    padding: 15px 36px;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     font-size: 16px;
+    font-weight: 600;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
   }
-  .btn:hover { background: #c07a30; }
+  .btn:hover { background: #cf9550; transform: translateY(-2px); }
 
-  section { padding: 60px 40px; max-width: 900px; margin: 0 auto; }
-  section h2 { font-size: 28px; margin-bottom: 20px; color: #1e3d2f; }
-  section p { font-size: 16px; line-height: 1.6; }
+  section { padding: 80px 50px; max-width: 1000px; margin: 0 auto; }#about { background: #fff; }
+#gallery { background: #f4f0e8; }
+#tours { background: #fff; }
+#book { background: #f4f0e8; }
+  section h2 { font-size: 32px; margin-bottom: 25px; color: #16302a; text-align: center; }
+  section p { font-size: 16px; line-height: 1.7; color: #4a4a4a; }
 
-  .tours { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin-top: 30px; }
+  #about p { max-width: 700px; margin: 0 auto; text-align: center; }
+
+  .tours { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 28px; margin-top: 40px; }
   .tour-card {
     background: #fff;
-    border-radius: 10px;
-    padding: 25px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-radius: 14px;
+    padding: 28px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.07);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    cursor: pointer;
+    border: 1px solid #f0ece2;
   }
-  .tour-card h3 { color: #1e3d2f; margin-bottom: 10px; }
-  .tour-card p { font-size: 14px; color: #555; }
+  .tour-card:hover { transform: translateY(-6px); box-shadow: 0 10px 24px rgba(0,0,0,0.12); }
+  .tour-card h3 { color: #16302a; margin-bottom: 10px; font-size: 19px; }
+  .tour-card p { font-size: 14px; color: #666; }
 
   footer {
-    background: #1e3d2f;
-    color: #fff;
+    background: #16302a;
+    color: #d8d3c8;
     text-align: center;
-    padding: 30px;
+    padding: 40px;
     font-size: 14px;
   }
-  footer a { color: #d98c3f; }
+  footer p { margin-bottom: 8px; }
+  footer a { color: #e0a860; text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
@@ -102,7 +121,7 @@
       <img src="photos/IMG_2490.JPG" style="width:100%; height:200px; object-fit:cover; border-radius:8px;">
       <img src="photos/IMG_2494.JPG" style="width:100%; height:200px; object-fit:cover; border-radius:8px;">
     </div><div style="text-align:center; margin-top:25px;">
-  <a href="gallery.html" class="btn" style="background:#1e3d2f;">View Full Gallery &rarr;</a>
+  <a href="gallery.html" class="btn" style="background:#16302a; color:#fff;">View Full Gallery &rarr;</a>
 </div>
 </section>
  
@@ -162,5 +181,7 @@
     <p>WhatsApp: <a href="https://wa.me/2203261234">+220 326 1234</a></p>
   </footer>
 
-</body>
+<a href="https://wa.me/2203261234" target="_blank" style="position:fixed; bottom:20px; right:20px; background:#25D366; color:#fff; padding:14px 20px; border-radius:50px; text-decoration:none; font-weight:bold; box-shadow:0 4px 12px rgba(0,0,0,0.3); z-index:999; display:flex; align-items:center; gap:8px;">
+  💬 WhatsApp Us
+</a></body>
 </html>
